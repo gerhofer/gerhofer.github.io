@@ -1,0 +1,58 @@
+body {
+  background: #cc33ff;
+  font-family: "Comic Sans MS";
+  width: 80vw;
+  padding-left: 10vw;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+/* this is a comment */
+
+p.bluetext {
+  color: aqua;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+li:nth-child(odd) {
+  border: 3px dotted green;
+}
+
+li:nth-child(even) {
+  border: 3px dotted yellow;
+}
+
+.row {
+  display: flex;
+}
+
+.left {
+  float: left;
+  flex: 60%;
+}
+
+.right {
+  flex: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
