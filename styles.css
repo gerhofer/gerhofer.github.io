@@ -1,58 +1,132 @@
-body {
-  background: #cc33ff;
-  font-family: "Comic Sans MS";
-  width: 80vw;
-  padding-left: 10vw;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+section:first-of-type {
+  height: 70vh;
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section:nth-of-type(2) {
+  margin-top: 20px;
+  display: flex;
+  min-height: 150px;
+  color: darkslategray;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(2) div:first-child {
+  flex: 1;
+  text-align: center;
+}
+
+section:nth-of-type(2) div:last-child {
+  flex: 2;
 }
 
 h1 {
-  font-family: Helvetica;
+  font-weight: 500;
+  font-size: xxx-large;
 }
 
-/* this is a comment */
-
-p.bluetext {
-  color: aqua;
-  font-size: 30px;
-  font-weight: bold;
-  font-style: italic;
-  text-decoration: line-through;
+.button-primary,
+.button-secondary {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
-li:nth-child(odd) {
-  border: 3px dotted green;
+.button-secondary:hover,
+.button-primary {
+  background-color: pink;
+  margin-right: 10px;
+  color: white;
+  border: solid 2px white;
 }
 
-li:nth-child(even) {
-  border: 3px dotted yellow;
+.button-primary:hover,
+.button-secondary {
+  background-color: white;
+  border: solid 2px pink;
+  color: pink;
 }
 
-.row {
+section:nth-of-type(3) {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: pink;
+  color: white;
+  text-align: center;
+}
+
+section:nth-of-type(3) ul {
+  margin-top: 20px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.left {
-  float: left;
-  flex: 60%;
+section:nth-of-type(3) ul li {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style: none;
 }
 
-.right {
-  flex: 40%;
+section:nth-of-type(3) ul li img {
+  border: solid 2px white;
+  padding: 10px;
+  border-radius: 50%;
 }
 
+section:nth-of-type(4) {
+  margin-top: 20px;
+}
 
+section:nth-of-type(4) p {
+  background-color: rgba(255, 193, 203, 0.4);
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+section:nth-of-type(4) ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+section:nth-of-type(4) ul li {
+  height: 300px;
+  width: calc(100% / 3);
+  list-style: none;
+}
 
+.coderdojo {
+  background: url(assets/project4.jpg) no-repeat center;
+  background-size: cover;
+}
 
+.okapis {
+  background: url(assets/project4.jpg) no-repeat center;
+  background-size: cover;
+}
 
-
-
-
-
-
-
-
-
-
-
+.female-coders {
+  background: url(assets/project4.jpg) no-repeat center;
+  background-size: cover;
+}
